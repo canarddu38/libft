@@ -2,25 +2,44 @@
 My very first own library, part of the 42 cursus
 
 ## Fonctions List
-### 
-isalpha
-- isdigit
-• isalnum
-• isascii
-• isprint
-• strlen
-• memset
-• bzero
-• memcpy
-• memmove
-• strlcpy
-• strlcat
-• toupper
-• tolower
-• strchr
-• strrchr
-• strncmp
-• memchr
-• memcmp
-• strnstr
-• atoi
+### Part 1 - Libc functions
+- ft_isalpha
+- ft_isdigit
+- ft_isalnum
+- ft_isascii
+- ft_isprint
+- ft_strlen
+- ft_memset
+- ft_bzero
+- ft_memcpy
+- ft_memmove
+- ft_strlcpy
+- ft_strlcat
+- ft_toupper
+- ft_tolower
+- ft_strchr
+- ft_strrchr
+- ft_strncmp
+- ft_memchr
+- ft_memcmp
+- ft_strnstr
+- ft_atoi
+
+### Part 1 (bis) - Memory allocation functions
+- ft_calloc
+- ft_strdup
+
+### Part 2 - Additional functions
+- ft_substr
+- ft_strjoin
+- ft_strtrim
+- ft_split
+- ft_itoa
+- ft_strmapi
+- ft_striteri
+- ft_putchar_fd
+- ft_putstr_fd
+- ft_putendl_fd
+- ft_putnbr_fd
+
+### Bonus - Bonus functions
