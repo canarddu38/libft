@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julcleme <julcleme@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/05 00:00:56 by julcleme          #+#    #+#             */
-/*   Updated: 2025/11/06 17:22:54 by julcleme         ###   ########lyon.fr   */
+/*   Created: 2025/11/06 15:40:29 by julcleme          #+#    #+#             */
+/*   Updated: 2025/11/07 12:56:45 by julcleme         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+char	*ft_strmapi(const char *str, char (*f)(unsigned int, char))
 {
+	char	*output;
 	size_t	size;
 
-	size = 0;
-	while (str[size] != '\0')
-		size++;
-	return (size);
+	size = ft_strlen(str) + 1;
+	output = ft_calloc(sizeof(char), size);
+	if (!output)
+		return (0);
+	size -= 1;
+	while (size > 0)
+	{
+		output[size - 1] = (char)(*f)(size - 1, ((char *)str)[size - 1]);
+		size--;
+	}
+	return (output);
 }

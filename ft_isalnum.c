@@ -6,13 +6,13 @@
 /*   By: julcleme <julcleme@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 23:45:00 by julcleme          #+#    #+#             */
-/*   Updated: 2025/11/04 23:59:22 by julcleme         ###   ########lyon.fr   */
+/*   Updated: 2025/11/05 10:24:25 by julcleme         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(char c)
+int	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));
 }

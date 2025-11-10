@@ -6,13 +6,13 @@
 /*   By: julcleme <julcleme@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 00:39:09 by julcleme          #+#    #+#             */
-/*   Updated: 2025/11/04 23:59:14 by julcleme         ###   ########lyon.fr   */
+/*   Updated: 2025/11/05 13:16:17 by julcleme         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }

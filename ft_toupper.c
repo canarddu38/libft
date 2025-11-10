@@ -6,13 +6,13 @@
 /*   By: julcleme <julcleme@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 00:07:32 by julcleme          #+#    #+#             */
-/*   Updated: 2025/11/05 00:08:00 by julcleme         ###   ########lyon.fr   */
+/*   Updated: 2025/11/05 13:06:43 by julcleme         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_toupper(char c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (c + 'A' - 'a');

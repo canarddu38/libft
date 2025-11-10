@@ -6,13 +6,13 @@
 /*   By: julcleme <julcleme@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 23:54:07 by julcleme          #+#    #+#             */
-/*   Updated: 2025/11/04 23:59:16 by julcleme         ###   ########lyon.fr   */
+/*   Updated: 2025/11/05 13:05:41 by julcleme         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(char c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
