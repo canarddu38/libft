@@ -6,7 +6,7 @@
 /*   By: julcleme <julcleme@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 17:05:31 by julcleme          #+#    #+#             */
-/*   Updated: 2025/11/10 11:32:19 by julcleme         ###   ########lyon.fr   */
+/*   Updated: 2025/11/11 14:13:13 by julcleme         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,10 @@ int	ft_atoi(char *str)
 	}
 	while (ft_isdigit(str[i]))
 	{
+		if ((size_t)nb > (size_t)(LLONG_MAX / 10) ||
+			((size_t)nb == (size_t)(LLONG_MAX / 10) &&
+			(size_t)(str[i] - '0') > (size_t)(LLONG_MAX % 10)))
+			return (-(sign == 1));
 		nb = nb * 10 + (str[i] - '0');
 		i++;
 	}

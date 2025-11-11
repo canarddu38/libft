@@ -6,7 +6,7 @@
 /*   By: julcleme <julcleme@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 23:49:58 by julcleme          #+#    #+#             */
-/*   Updated: 2025/11/10 16:54:05 by julcleme         ###   ########lyon.fr   */
+/*   Updated: 2025/11/11 14:05:53 by julcleme         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 # define LIBFT_H
 
 # include <stdlib.h>
-# include <stdlib.h>
 # include <unistd.h>
+# include <stdint.h>
+# include <limits.h>
 
 typedef struct s_list
 {
