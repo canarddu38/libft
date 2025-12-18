@@ -33,7 +33,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 	while (((char *)s1)[i] && is_in_charset(((char *)s1)[i], set))
 		i++;
 	j = ft_strlen(s1);
-	if (i == j || j < 0)
+	if (i == j)
 		return (ft_strdup(""));
 	j--;
 	while (((char *)s1)[j] && is_in_charset(((char *)s1)[j], set))
