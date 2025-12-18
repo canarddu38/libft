@@ -31,10 +31,6 @@ int	ft_atoi(char *str)
 	}
 	while (ft_isdigit(str[i]))
 	{
-		if ((size_t)nb > (size_t)(LLONG_MAX / 10) ||
-			((size_t)nb == (size_t)(LLONG_MAX / 10) &&
-			(size_t)(str[i] - '0') > (size_t)(LLONG_MAX % 10)))
-			return (-(sign == 1));
 		nb = nb * 10 + (str[i] - '0');
 		i++;
 	}
