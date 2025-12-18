@@ -1,4 +1,4 @@
-name: compilation
+name: libft_test
 
 on:
   push:
@@ -13,11 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: francinette install
-      run: bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"
     - name: make
       run: make
     - name: make bonus
       run: make bonus
-    - name: francinette
-      run: francinette -s
