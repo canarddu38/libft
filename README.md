@@ -1,5 +1,9 @@
 # libft
-My very first own library, part of the 42 cursus
+
+[![libft_test](https://github.com/canarddu38/libft/actions/workflows/test.yml/badge.svg)](https://github.com/canarddu38/libft/actions/workflows/test.yml)
+
+My very first own C standard library, part of the 42 common core
+
 
 ## Fonctions List
 ### Part 1 - Libc functions
@@ -55,7 +59,7 @@ My very first own library, part of the 42 cursus
 
 
 ## TODO
-- [ ] Do a automatized check file
-- [x] Check [ft_memmove](./ft_memmove.c)
+- [x] Do a automatized workflow
+- [x] Fix [ft_memmove](./ft_memmove.c)
 - [x] Check [ft_strtrim](./ft_strtrim.c)
-- [x] Check [ft_split](./ft_split.c)
+- [x] Fix [ft_split](./ft_split.c)
